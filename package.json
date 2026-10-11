@@ -1,0 +1,22 @@
+{
+  "name": "circle-recommendations",
+  "version": "1.0.0",
+  "description": "Ranked Circle recommendations with member-facing explanations (Lean In take-home)",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "seed": "node src/db/seed.mjs",
+    "start": "node --disable-warning=ExperimentalWarning src/server.mjs",
+    "test": "node --disable-warning=ExperimentalWarning --test",
+    "report": "node --disable-warning=ExperimentalWarning scripts/report.mjs"
+  },
+  "dependencies": {
+    "fastify": "^5.0.0"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}
